@@ -7,8 +7,34 @@
 <header class="top"><div class="wrap top-inner"><a class="wordmark" href="index.html" aria-label="Nada Fahim, home"><span class="mark">NF</span><span>Nada Fahim</span></a><nav aria-label="Primary"><a href="index.html#work">Work</a><a href="index.html#research">Research</a><a href="index.html#experience">Experience</a><a class="nav-contact" href="index.html#contact">Contact <span class="arrow" aria-hidden="true"></span></a></nav></div></header>
 <main id="main"><article class="case-page wrap"><a class="quiet back" href="index.html#work">← Selected work</a>
 <header class="case-header"><p class="eyebrow">Industry · Avemoy FlexCo</p><h1>Greenhouse AI & autonomous drone operations</h1><p class="intro">Turning aerial greenhouse footage into crop monitoring data and connecting the vision pipeline to field hardware.</p></header>
-<div class="case-meta"><strong>AI Team Lead</strong><span>Computer vision · Edge software</span></div><div class="case-media"><figure><img src="greenhouse.webp" alt="Illustration of tomatoes growing in a greenhouse"><figcaption>Illustrative greenhouse image.</figcaption></figure></div>
+<div class="case-meta"><strong>AI Team Lead</strong><span>Computer vision · Edge software</span></div><section class="case-media" id="vision-demo" aria-labelledby="vision-demo-title" style="margin-top: 24px">
+<h2 id="vision-demo-title">Computer vision in four stages</h2>
+<figure style="margin-top: 12px">
+<video controls playsinline preload="none" poster="greenhouse-vision-poster.webp" aria-label="Four views of the same greenhouse flight footage">
+<source src="greenhouse_vision_pipeline_compact.mp4" type="video/mp4">
+<a href="greenhouse_vision_pipeline_compact.mp4">Open the video</a>
+</video>
+<figcaption>From left to right, raw footage, depth filtering, tomato cluster detection, and ripeness classification.</figcaption>
+</figure>
+</section>
 <div class="case-details"><section><h2>Challenge</h2><p>A greenhouse monitoring system has to do more than run a model. It has to collect footage reliably, process it on edge hardware, and make the results available for crop monitoring.</p></section><section><h2>My contribution</h2><p>I lead development of AI and software pipelines for greenhouse crop monitoring. I work across fruit analysis, Python services for event-driven workflows, web-based configuration, and integration with drones and docking hardware.</p></section>
 <section><h2>Approach</h2><p>Connect configurable React and TypeScript interfaces to FastAPI services and Dockerized processing on Linux edge devices. Model inference, data processing, and hardware events sit within the same workflow.</p></section><section><h2>Outcome</h2><p>The system supports drone-based data collection and crop monitoring. Avemoy’s public Hortiscan overview describes how local processing feeds reports for greenhouse operators.</p><a class="case-link" href="https://www.youtube.com/watch?v=kRI7_6lviro">Watch the public Avemoy demo <span class="arrow" aria-hidden="true"></span></a><a class="case-link" href="https://www.avemoy.com/process">Hortiscan product overview <span class="arrow" aria-hidden="true"></span></a></section></div>
+<section aria-labelledby="interfaces-title" style="margin-top: 44px">
+<h2 id="interfaces-title">Pipeline and dashboard previews</h2>
+<div class="case-media" style="display: grid; gap: 22px; margin-top: 16px">
+<figure>
+<a href="Vision_AI_Pipeline_Dark.png"><img src="Vision_AI_Pipeline_Dark.png" alt="Vision pipeline mockup showing depth detection, cluster tracking, ripeness classification, and dashboard output" loading="lazy" style="object-fit: contain; max-height: none"></a>
+<figcaption><strong>AI Vision Pipeline.</strong> A portfolio recreation with connected processing stages and example logs.</figcaption>
+</figure>
+<figure>
+<a href="Edge_Device_Pipeline_Dark.png"><img src="Edge_Device_Pipeline_Dark.png" alt="Edge pipeline mockup showing flight, docking, charging, and processing handoff nodes" loading="lazy" style="object-fit: contain; max-height: none"></a>
+<figcaption><strong>Edge Device Pipeline.</strong> A portfolio recreation showing how flight, landing, and charging connect to the AI pipeline.</figcaption>
+</figure>
+<figure>
+<a href="Harvest_Control_Classic.png"><img src="Harvest_Control_Classic.png" alt="Harvest Control dashboard mockup with harvest outlook charts, ripeness data, and a greenhouse monitoring drone" loading="lazy" style="object-fit: contain; max-height: none"></a>
+<figcaption><strong>Harvest Control.</strong> A dashboard recreation with sample harvest data and the greenhouse monitoring drone.</figcaption>
+</figure>
+</div>
+</section>
 <div class="stack"><h2>Tools &amp; methods</h2><p>Python, FastAPI, React, TypeScript, Docker, Linux, Computer vision</p></div></article></main>
 <footer><div class="wrap footer-inner"><span>Nada Fahim</span><span>AI software · Robotics · Klagenfurt, Austria</span></div></footer></body></html>
